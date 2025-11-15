@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodio - Food Quality Checker</title>
+    <style>
+        #eeeoh th{
+            border: 0;
+            background-color: rgba(184, 181, 181, 0.767);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        tr th{
+            background-color: rgba(218, 218, 218, 0.767);
+            border: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tr td{
+            background-color: rgba(255, 255, 255, 0.767);
+            border: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        table{
+            background-color: rgba(218, 218, 218, 0.767);
+            border: 0;
+            border-radius: 10px;
+        }
+        p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        button{
+            background-color: green;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            cursor: pointer;
+            border: 0;
+            height: 36.2px;
+            border-radius: 5px;
+        }
+        input{
+            border: 1px solid black;
+            font-weight: bold;
+            height: 33px;
+            border-radius: 5px;
+            width: 10cm;
+            margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br>
+    <center><input type="text" id="_barcodeinput" placeholder="Enter barcode of food"><button id="getFactsBtn">Get Facts</button></center>
+    <script src="script.js"></script>
+    <center><p id="Food_name">Product Name : </p></center>
+    <center><p id="nutrientscore">Nutri Score : </p></center>
+   <center><table border="2">
+        <tr id="eeeoh">
+            <th>Nutrition facts</th>
+            <th>As sold
+for 100 g / 100 ml</th>
+        </tr>
+        <tr>
+            <th>Energy</th>
+            <td id="energy_value"></td>
+        </tr>
+        <tr>
+            <th>Saturated fat</th>
+            <td id="sat_fat_value"></td>
+        </tr>
+        <tr>
+            <th>Sugars</th>
+            <td id="sugar_value"></td>
+        </tr>
+        <tr>
+            <th>Salt</th>
+            <td id="salt_value"></td>
+        </tr>
+        <tr>
+            <th>Fruits Vegetables legumes</th>
+            <td id="fruits_veg"></td>
+        </tr>
+    </table></center>
+</body>
+</html>
