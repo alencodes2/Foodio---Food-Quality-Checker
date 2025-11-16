@@ -26,7 +26,7 @@ const positiveNutrients = data.product.nutriscore_data.positive_nutrients;
 const hasFruitsVeg = positiveNutrients.includes("fruits_vegetables_legumes") ? "Yes" : "No";
 
 document.getElementById("fruits_veg").innerText = hasFruitsVeg;
-document.getElementById("nutrientscore").innerHTML ="Nutri Score : " + data.product.nutriscore_data.score;
+document.getElementById("nutrientscore").innerHTML ="Nutri Score : " + data.product.nutriscore_data.grade;
 
 
     }   
@@ -37,3 +37,4 @@ document.getElementById("nutrientscore").innerHTML ="Nutri Score : " + data.prod
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("getFactsBtn").addEventListener("click", fetchData);
 });
+
